@@ -1,0 +1,7 @@
+<points_of_interest>
+    <station><title>Тестовская</title><longitude>37.531472</longitude><latitude>55.753827</latitude><transport_type>train</transport_type><station_type>platform</station_type><direction>Белорусское</direction><codes><esr_code>198226</esr_code><yandex_code>s9601349</yandex_code></codes></station>
+    <station><title>Савёловская</title><longitude>37.590095</longitude><latitude>55.79427</latitude><transport_type>train</transport_type><station_type>platform</station_type><direction>Курское</direction><codes><esr_code>191655</esr_code><yandex_code>s9601382</yandex_code></codes></station>
+    <station><title>Станколит</title><longitude>37.598675</longitude><latitude>55.799496</latitude><transport_type>train</transport_type><station_type>platform</station_type><direction>Курское</direction><codes><esr_code>191640</esr_code><yandex_code>s9601384</yandex_code></codes></station>
+    <station><title>Дмитровская</title><longitude>37.578562</longitude><latitude>55.808007</latitude><transport_type>train</transport_type><station_type>platform</station_type><direction>Рижское</direction><codes><esr_code>196112</esr_code><yandex_code>s9600901</yandex_code></codes></station>
+    <station><title>Царицыно</title><longitude>37.668953</longitude><latitude>55.618421</latitude><transport_type>train</transport_type><station_type>station</station_type><direction>Курское</direction><codes><esr_code>191424</esr_code><yandex_code>s9600891</yandex_code></codes></station>
+</points_of_interest>
