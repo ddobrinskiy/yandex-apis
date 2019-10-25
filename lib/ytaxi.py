@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
 # In[1]:
 
 
@@ -33,13 +30,20 @@ def read_credentials():
     
 
 def fetch_api_request():
-    lat_from, lon_from = 55.747704, 37.536745 # work
-    lat_to  , lon_to   = 55.803878, 37.591452 # home
 
-    rll= f"{lon_from},{lat_from}~{lon_to},{lat_to}"
+    coords = {"work":{"lat": 55.747114, "lon": 37.535729},
+              "home":{"lat": 55.803878, "lon": 37.591452},
+              "grig":{"lat": 55.509929, "lon": 37.905518},
+    }
 
-    #req_str = "nosmoking,conditioner"
-    req_str = None
+    coord_template = "{lon},{lat}"
+
+    from_ = coord_template.format(**coords["work"])
+    to_   = coord_template.format(**coords["grig"])
+    rll = f"{from_}~{to_}"
+
+    # доп требования
+    # req_str = "nosmoking,conditioner"
 
     api_creds = read_credentials()
 
@@ -79,7 +83,7 @@ def generate_option_message(o):
 
 
 def print_current_options(options):
-    print(f"Поездка с Работы до Дома займёт {json_response['time_text']}")
+    print(f"Поездка с Работы до Григ займёт {json_response['time_text']}")
     for o in options:
         try:
             print(generate_option_message(o))
